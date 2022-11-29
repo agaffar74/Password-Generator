@@ -8,10 +8,10 @@ var specialCharacters = ['@', '%', '+', '\\', '/', "'", '!', '#', '$', '^', '?',
 
 // Function to capture the proper password length or continue to prompt
 function getPasswordOptions() {
-	lengthValue = prompt("Choose Your Password Length. \nBetween: 8 - 128");
+	lengthValue = prompt("Choose Your Password Length. \nBetween: 10 - 64");
 	// prompt cannot be empty, be less than 8, more than 128 and cannot contain text
-	while (lengthValue === "" || parseInt(lengthValue) < 8 || parseInt(lengthValue) > 128 || isNaN(parseInt(lengthValue))) {
-		lengthValue = prompt("Choose Your Password Length. \nBetween: 8 - 128");
+	while (lengthValue === "" || parseInt(lengthValue) < 10 || parseInt(lengthValue) > 64 || isNaN(parseInt(lengthValue))) {
+		lengthValue = prompt("Choose Your Password Length. \nBetween: 10 - 64");
 	}
 	console.log("Password length: " + lengthValue);
 	return lengthValue;
