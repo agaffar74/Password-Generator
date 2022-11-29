@@ -21,8 +21,9 @@ This was a learning challange for creating an app that randomly generates a pass
 ![image](https://user-images.githubusercontent.com/115975620/204620878-06b920f1-425b-403a-885b-dc3e20e27a58.png)
 
     * Character types
-    * 
-    ** ![image](https://user-images.githubusercontent.com/115975620/204619483-77bb2654-6073-4c32-a780-1a3cc8cf57db.png)
+   
+   ![image](https://user-images.githubusercontent.com/115975620/204621292-79bc0159-a71a-46bc-9c97-2f0cdd011641.png)
+
     
       * Lowercase
       * Uppercase
