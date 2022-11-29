@@ -1,16 +1,15 @@
-#Password-Generator
+# **Password-Generator**
 
-##Description of the Project
+## Description of the Project
 An application that the client can use to generate a random password based on criteria they’ve selected from the option at the beggining. This app will run in the browser. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
 
-##Goal of the Project
+## Goal of the Project
 This was a learning challange for creating an app that randomly generates a password based on defined criteria ensuring strong security. Learned to execute the app in the browser that features dynamically updated HTML and CSS powered by JavaScript code that I have written.
 
-Scope of Work
-1.	User will click the button to generate a password
-2.	After clicking the user will be prompted with questions regarding a. criteria & b. options for password:
+## Scope of Work
 
-* The App will generate a password when the button is clicked
+**User will click the button to generate a password**
+**The App will generate a password when the button is clicked**
   * It will present a series of prompts for password criteria, i.e.
     * Length of password
       * At least 10 characters but no more than 64.
@@ -22,13 +21,15 @@ Scope of Work
   * Code are validated for each input and at least one character type should be selected
   * Once prompts are answered then the password should is generated and wriyyed to the text box of the page.
 
-##Deployment
+## Deployment
 Application GitHub URL submitted.
 GitHub repository contains 4 files, index.html, style.css script.js and README.md
 All files contains application code.
-The site is live at GitHub: https://agaffar74.github.io/Console-Finances/ 
-The Site is also live at: https://agaffar74.github.io/Console-Finances/
+The site is live at [GitHub:] (https://agaffar74.github.io/Password-Generator/) 
+The Site is also live [URL:] (https://agaffar74.github.io/Password-Generator/index.html)
 
-##Contact If you have any questions, please contact me at:
+## Contact If you have any questions, please contact me at:
 
-##Github Profile: agaffar74 = Email: a_gaffar74@yahoo.com = LinkedIn: abdul-gaffar74
+Github Profile: agaffar74 
+Email: a_gaffar74@yahoo.com 
+LinkedIn: abdul-gaffar74
