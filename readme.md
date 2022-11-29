@@ -9,27 +9,25 @@ This was a learning challange for creating an app that randomly generates a pass
 Scope of Work
 1.	User will click the button to generate a password
 2.	After clicking the user will be prompted with questions regarding a. criteria & b. options for password:
-•	Criteria:
-•	Must be between 8 and 128 characters long
-•	Must choose at least 1 of the character options:
-o	numbers
-o	lower case letter
-o	upper case letter
-o	and/or special character
-•	Options:
-•	User chooses length of PW within the criteria
-•	User can choose which/some/or all of the PW character choices: (must include at least 1 option per criteria above)
-o	numbers
-o	lower case letter
-o	upper case letter
-o	special character
-3.	Upon answering the prompts the password will generate and appear in the box.
 
-Deployment
+* The App will generate a password when the button is clicked
+  * It will present a series of prompts for password criteria, i.e.
+    * Length of password
+      * At least 10 characters but no more than 64.
+    * Character types
+      * Lowercase
+      * Uppercase
+      * Numeric
+      * Special characters ($@%&*, etc)
+  * Code are validated for each input and at least one character type should be selected
+  * Once prompts are answered then the password should is generated and wriyyed to the text box of the page.
+
+##Deployment
 Application GitHub URL submitted.
-GitHub repository contains 3 files, index.html, index.js and readme.md
+GitHub repository contains 4 files, index.html, style.css script.js and README.md
 All files contains application code.
-The site is live at GitHub: https://agaffar74.github.io/Console-Finances/ The Site is also live at: https://agaffar74.github.io/Console-Finances/
+The site is live at GitHub: https://agaffar74.github.io/Console-Finances/ 
+The Site is also live at: https://agaffar74.github.io/Console-Finances/
 
 ##Contact If you have any questions, please contact me at:
 
