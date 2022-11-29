@@ -9,7 +9,7 @@ This was a learning challange for creating an app that randomly generates a pass
 ## Scope of Work
 
 **User will click the button to generate a password**
-
+![image](https://user-images.githubusercontent.com/115975620/204620654-88d6b63b-6be5-4597-8a04-3a11cbd364a7.png)
 
 
 **The App will generate a password when the button is clicked**
