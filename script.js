@@ -21,11 +21,12 @@ function generatePassword() {
   
   selectPassCharacters = "";
   randomPassword = "";
+  
 	var lengthofPassword = getPasswordOptions(); // Length of Password Requestd
-	var lowerCase = confirm("Include Lowercase Characters?"); // Include Lowercase Letters?
-	var upperCase = confirm("Include Uppercase Characters?"); // Include Uppercase Letters?
-	var numbers = confirm("Include Numbers?"); // Include Numbers?
-    var special = confirm("Include Special Characters?"); // Include Special Characters?
+	var lowerCase        = confirm("Include Lowercase Characters?"); // Include Lowercase Letters?
+	var upperCase        = confirm("Include Uppercase Characters?"); // Include Uppercase Letters?
+	var numbers          = confirm("Include Numbers?"); // Include Numbers?
+  var special          = confirm("Include Special Characters?"); // Include Special Characters?
   
   // If no character options are selected, alert message and begin again.
   if (lowerCase === false && upperCase === false && numbers === false && special === false) {
