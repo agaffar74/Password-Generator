@@ -37,7 +37,7 @@ Application GitHub URL submitted.
 GitHub repository contains 4 files, index.html, style.css script.js and README.md
 All files contains application code.
 
-* The site is live at [GitHub:] (https://agaffar74.github.io/Password-Generator/)
+* The site is live at [GitHub:] (https://github.com/agaffar74/Password-Generator)
 
 * The Site is also live [URL:] (https://agaffar74.github.io/Password-Generator/index.html)
 
