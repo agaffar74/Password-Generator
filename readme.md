@@ -11,11 +11,13 @@ This was a learning challange for creating an app that randomly generates a pass
 **User will click the button to generate a password**
 
 
+
 **The App will generate a password when the button is clicked**
   * It will present a series of prompts for password criteria, i.e.
-    * Length of password
+      * Length of password
       * At least 10 characters but no more than 64.
     * Character types
+    ** ![image](https://user-images.githubusercontent.com/115975620/204619483-77bb2654-6073-4c32-a780-1a3cc8cf57db.png)
       * Lowercase
       * Uppercase
       * Numeric
