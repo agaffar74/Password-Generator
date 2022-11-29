@@ -7,7 +7,7 @@ function generatePassword() {
   var possibleCharacters = [];
 
   // get input and validate
-  var numberOfCharacters = prompt("Please enter a valid length of your password(between 8-128 characters.)");
+  var numberOfCharacters = prompt("Please enter a valid length of your password(between 8 and 128.)");
   if (numberOfCharacters < 8 || numberOfCharacters > 128) {
     alert ("You have put an invalid length of password.");
     return;
@@ -70,11 +70,11 @@ function generatePassword() {
   }
 
   // pick random cards out of new pool for length of password
-  let finalPassword = ""
+  let randomPassword = ""
   for (let i = 0; i < numberOfCharacters; i++) {
     let rng =[Math.floor(Math.random() * possibleCharacters.length)];
-    // or finalPassword += possibleCharacters[rng];
-    finalPassword = finalPassword + possibleCharacters[rng];
+    // or randomPassword += possibleCharacters[rng];
+    randomlPassword = randomPassword + possibleCharacters[rng];
   }
   return finalPassword;
 };
