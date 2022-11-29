@@ -19,7 +19,7 @@ function getPasswordOptions() {
 
 function generatePassword() {
   
-  selectPassCharacters = "";
+  selectPassCharacters = [];
   randomPassword = "";
 
 	var lengthofPassword = getPasswordOptions(); // Length of Password Requestd
@@ -34,36 +34,38 @@ function generatePassword() {
     generatePassword();
   }
   else { // Build password characters string per requirements.
-    if (lowerCase) {
-      selectPassCharacters = lowercaseCharacters;
+    
+    
+    if (lowerCase == true) {
+      selectPassCharacters = selectPassCharacters.concat(lowercaseCharacters);
     }
-    if (upperCase) {
-      selectPassCharacters += uppercaseCharacters;
+    if (upperCase == true) {
+      selectPassCharacters += selectPassCharacters.concat(uppercaseCharacters);
     }
-    if (numbers) {
-      selectPassCharacters += numericCharacters;
+    if (numbers == true) {
+      selectPassCharacters += selectPassCharacters.concat(numericCharacters);
     }
-    if (special) {
-      selectPassCharacters += specialCharacters;
-    }
-       
-    console.log("Use Characters: " + selectPassCharacters);
-
-    for (var i = 0; i < lengthofPassword; i++) {
-      randomPassword += selectPassCharacters.charAt(Math.floor(Math.random() * selectPassCharacters.length));
+    if (special == true) {
+      selectPassCharacters += selectPassCharacters.concat(specialCharacters);
     }
   }
-	console.log("Pasword is: " + randomPassword);
+  
+  //Building the password
+  for (var i = 0; i < lengthofPassword; i++) 
+      randomPassword += selectPassCharacters[Math.floor(Math.random() * selectPassCharacters.length)];
+  
 	return randomPassword;
 }
 
-
 // Write password to the #password input
 function writePassword() {
-	var password = generatePassword();
-	var passwordText = document.querySelector("#password");
-
-	passwordText.value = password;
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  if (password){
+    passwordText.value = password;
+  } else {
+    passwordText.value = '';
+  }
 }
 
 // Get references to the #generate element

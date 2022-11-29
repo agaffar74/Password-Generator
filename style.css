@@ -131,11 +131,12 @@ button[disabled] {
 }
 
 #password {
-    font-size: 1red;
+    font-size: 3red;
+    font-weight: bold;
 }
 
 @media(max-width:500px) {
     .btn {
-        font-size: 0.8rem;
+        font-size: 1.0rem;
     }
 }
