@@ -21,7 +21,7 @@ function generatePassword() {
   
   selectPassCharacters = "";
   randomPassword = "";
-  
+
 	var lengthofPassword = getPasswordOptions(); // Length of Password Requestd
 	var lowerCase        = confirm("Include Lowercase Characters?"); // Include Lowercase Letters?
 	var upperCase        = confirm("Include Uppercase Characters?"); // Include Uppercase Letters?
@@ -64,7 +64,6 @@ function writePassword() {
 	var passwordText = document.querySelector("#password");
 
 	passwordText.value = password;
-
 }
 
 // Get references to the #generate element
