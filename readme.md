@@ -9,6 +9,8 @@ This was a learning challange for creating an app that randomly generates a pass
 ## Scope of Work
 
 **User will click the button to generate a password**
+
+
 **The App will generate a password when the button is clicked**
   * It will present a series of prompts for password criteria, i.e.
     * Length of password
@@ -26,11 +28,12 @@ Application GitHub URL submitted.
 GitHub repository contains 4 files, index.html, style.css script.js and README.md
 All files contains application code.
 
-**The site is live at [GitHub:] (https://agaffar74.github.io/Password-Generator/)** 
-**The Site is also live [URL:] (https://agaffar74.github.io/Password-Generator/index.html)**
+* The site is live at [GitHub:] (https://agaffar74.github.io/Password-Generator/)
+
+* The Site is also live [URL:] (https://agaffar74.github.io/Password-Generator/index.html)
 
 ## Contact If you have any questions, please contact me at:
 
-**Github Profile: agaffar74** 
-**Email: a_gaffar74@yahoo.com** 
-**LinkedIn: abdul-gaffar74**
+* Github Profile: agaffar74 
+* Email: a_gaffar74@yahoo.com 
+* LinkedIn: abdul-gaffar74
