@@ -46,7 +46,6 @@ var getnumaricCharacter   = confirm("Do you want numaricCharacter to be included
 var getlowercaseCharacter = confirm("Do you want to be included lowercaseCharacter?");;// Using a confirm prompt the user for lowercaseCharacter characters
 var getuppercaseCharacter = confirm("Do you want to be included uppercaseCharacter?");; // Using a confirm prompt the user for uppercaseCharacter characters
 
-
 // Creating the strings for the query
 var password= [];
 // for loop for randomising inputed characters
