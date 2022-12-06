@@ -1,75 +1,79 @@
-// Assignment code here
 // Array of Uppercase, Lowercase, Numeric and Special Characters to be included in password
-var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-var uppercaseCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-var lowercaseCharacters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-var specialCharacters = ['@', '%', '+', '\\', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.'];
-    
+var lowercaseCharacter = [ "a", "b", "c", "d,","e", "f", "g", "h","i", "j", "k","l" ,
+          "m", "n","o","p","q","r", "s","t","u","v","w", "x", "y", "z"];
 
-// Function to capture the proper password length or continue to prompt
-function getPasswordOptions() {
-	lengthValue = prompt("Choose Your Password Length. \nBetween: 10 - 64");
-	// prompt cannot be empty, be less than 8, more than 128 and cannot contain text
-	while (lengthValue === "" || parseInt(lengthValue) < 10 || parseInt(lengthValue) > 64 || isNaN(parseInt(lengthValue))) {
-		lengthValue = prompt("Choose Your Password Length. \nBetween: 10 - 64");
-	}
-	console.log("Password length: " + lengthValue);
-	return lengthValue;
-}
+var uppercaseCharacter = ["A", "B", "C", "D", "E", "F", "G", "H","I", "J", "K", "L", 
+           "M", "N", "O", "P", "Q","R","S","T", "U", "V", "W", "X", "Y", "Z"];
 
-function generatePassword() {
-  
-  selectPassCharacters = [];
-  randomPassword = "";
+var numaricCharacter = ["0","1","2","3","4","5","6","7","8","9"];
 
-	var lengthofPassword = getPasswordOptions(); // Length of Password Requestd
-	var lowerCase        = confirm("Include Lowercase Characters?"); // Include Lowercase Letters?
-	var upperCase        = confirm("Include Uppercase Characters?"); // Include Uppercase Letters?
-	var numbers          = confirm("Include Numbers?"); // Include Numbers?
-  var special          = confirm("Include Special Characters?"); // Include Special Characters?
-  
-  // If no character options are selected, alert message and begin again.
-  if (lowerCase === false && upperCase === false && numbers === false && special === false) {
-    alert("Please select at least one password criteria.");
-    generatePassword();
-  }
-  else { // Build password characters string per requirements.
-    
-    
-    if (lowerCase == true) {
-      selectPassCharacters = selectPassCharacters.concat(lowercaseCharacters);
-    }
-    if (upperCase == true) {
-      selectPassCharacters += selectPassCharacters.concat(uppercaseCharacters);
-    }
-    if (numbers == true) {
-      selectPassCharacters += selectPassCharacters.concat(numericCharacters);
-    }
-    if (special == true) {
-      selectPassCharacters += selectPassCharacters.concat(specialCharacters);
-    }
-  }
-  
-  //Building the password
-  for (var i = 0; i < lengthofPassword; i++) 
-      randomPassword += selectPassCharacters[Math.floor(Math.random() * selectPassCharacters.length)];
-  
-	return randomPassword;
-}
+var specialCharacter = ["?","!","@","#","$","%","^","&","*"]
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-  if (password){
-    passwordText.value = password;
-  } else {
-    passwordText.value = '';
-  }
-}
-
-// Get references to the #generate element
+//Retrieve a reference to the button with the id of generate
 var generateBtn = document.querySelector("#generate");
 
-// Add event listener to generate button
+//Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+//Write password to the #password input
+function writePassword(){
+var password = generatePassword();
+var passwordText = document.querySelector("#password");
+
+//Removing the commas  the password out of the array, after to the comma
+password = password.join("");
+//Putting the password on the page
+passwordText.value = password; 
+
+//write password to the #password input
+
+var isPasswordLength = "";
+//defining the length for the "if" statement.
+}
+
+function generatePassword(){
+//prompt user for password length
+//make sure the password length between 8-128 characters(inclusive)
+var length= prompt ("Please enter the number of characters. \nBetween 10 - 64?");
+//adding a return
+if (length< 10 || length > 64){
+  alert ("invalid length");
+  return;
+}
+  
+var getspecialCharacter   = confirm("Do you want specialCharacter to be included?");// Using a confirm prompt the user for specialCharacter characters
+var getnumaricCharacter   = confirm("Do you want numaricCharacter to be included?");;// Using a confirm prompt the user for numaricCharacter characters
+var getlowercaseCharacter = confirm("Do you want to be included lowercaseCharacter?");;// Using a confirm prompt the user for lowercaseCharacter characters
+var getuppercaseCharacter = confirm("Do you want to be included uppercaseCharacter?");; // Using a confirm prompt the user for uppercaseCharacter characters
+
+
+// Creating the strings for the query
+var password= [];
+// for loop for randomising inputed characters
+for (let i = 0; i < length ; i++) {
+  if (getspecialCharacter) {
+     password.push(getRandomItem(specialCharacter));
+  }
+  if (getnumaricCharacter) {
+    password.push(getRandomItem(numaricCharacter));
+  }
+  if (getlowercaseCharacter) {
+     password.push(getRandomItem(lowercaseCharacter));
+     }
+  if (getuppercaseCharacter) {
+    password.push(getRandomItem(uppercaseCharacter));
+  }
+ }
+  console.log (password)
+ //return the built password
+  return password.slice(0, length);
+}
+
+// Retrieve a random item from the provided array
+function getRandomItem(arr) {
+// Generate a random index from 0 to the length - 1 of our array
+    var randomIndex = Math.random() * arr.length;
+    // round down our random index
+    randomIndex = Math.floor(randomIndex);
+    // return the random item based off of our random index
+    return arr[randomIndex];}
