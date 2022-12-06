@@ -10,7 +10,8 @@ This was a learning challange for creating an app that randomly generates a pass
 
 **User will click the button to generate a password**
 
-![image](https://user-images.githubusercontent.com/115975620/204620654-88d6b63b-6be5-4597-8a04-3a11cbd364a7.png)
+![image](https://user-images.githubusercontent.com/115975620/206042227-d2e8df41-a0d1-4e81-8b1d-286acb964a73.png)
+
 
 
 **The App will generate a password when the button is clicked**
@@ -18,11 +19,13 @@ This was a learning challange for creating an app that randomly generates a pass
       * Length of password
       * At least 10 characters but no more than 64.
       
-![image](https://user-images.githubusercontent.com/115975620/204620878-06b920f1-425b-403a-885b-dc3e20e27a58.png)
+![image](https://user-images.githubusercontent.com/115975620/206042166-065f6cf9-6346-4c4f-af68-cde41d878030.png)
+
+
 
     * Character types
    
-   ![image](https://user-images.githubusercontent.com/115975620/204621292-79bc0159-a71a-46bc-9c97-2f0cdd011641.png)
+  ![image](https://user-images.githubusercontent.com/115975620/206042301-7c143ccd-538e-4b74-99e4-970692bf76ff.png)
 
     
       * Lowercase
